@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    
+  }
+  
+  header {
+    background-color: hsl(26,100%,55%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header img{
+    position: relative;
+    flex-basis: calc(25% - 20px);
+    padding: -40px;
+    margin: -10px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .container {
+
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .product-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product {
+    flex-basis: calc(25% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    margin: 0;
+  }
+  
+  .product p {
+    margin: 10px 0;
+  }
+  
+  .product button {
+    background-color: hsl(26,100%,55%);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background-color: hsl(26,100%,55%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .carrusel{
+    width: 100%;
+    max-width: 120em;
+    padding: 1em;
+    background-color: orange;
+    overflow: hidden;
+  }
+  .carrusel .grande{
+    width: 250%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9em;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+
+  }
+  .carrusel .img{
+    
+    width: calc( 100% / 3 -3em);
+    min-height: 10vh;
+    background-color: gray;
+    background-size: contain;
+
+  }
+  .carrusel .puntos{
+    
+    width: 100%;
+    margin: 1em 0 0;
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    ;
+    align-items: center;
+    cursor: pointer;
+
+  }
+  .carrusel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    border-radius: 50%;
+    background-color: gray;
+  }
+  .carrusel .punto.activo{
+    background-color: red;
+  }
+  @media (max-width: 767px) {
+    .carrusel .img {
+      width: calc(100%/2 - 2em);
+    }
+  }

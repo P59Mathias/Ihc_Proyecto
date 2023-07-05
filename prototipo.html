@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          Memory Kings
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="./styles.css">
+      
+    </head>
+    <style>
+      .atribution{font-size: 11px;text-align: center;}
+      .atribution a{color: firebrick;}
+    </style>
+    <body>
+
+          <main class="main-container">
+            <header class="header">
+              <div class="header__navigation">
+                <img class="header__menu"src="images/icons8-menu.svg"alt="menu icon" width="20" height="40">
+                <img class="header__logo"src="images/logo1.svg"alt="logo" width="200px" height="400px">
+              
+                <nav class="navebar">
+                  <ul class="navebar__items">
+                    <li><a class="navebar__link" href="/log-ing.html">Inicio-sesion</a></li>
+                    <li><a class="navebar__link" href="/Interfaz de usuario/index.html">Catalogo</a></li>
+                    <li><a class="navebar__link" href="/prototipo.html">Laptops</a></li>
+                    <li><a class="navebar__link" href="#">Computadoras</a></li>
+                    <li><a class="navebar__link" href="#">Celulares</a></li>
+                    <li><a class="navebar__link" href="mailto:mathiaslin12@gmail.com">Contacto</a></li>
+                  </ul>
+                </nav>
+              
+              </div>
+                <!--Inicio modal navbar-->
+                <div class="modal-navebar__background">
+                  <nav class="modal-navebar">
+                    <img class ="modal-navebar__close-icon" src="images/x-symbol-svgrepo-com copy.svg" alt="Closer" >
+                    <ul class="modal-navebar__items">
+                      <li><a class="modal-navbar__link" href="/log-ing.html">Inicio-sesion</a></li>
+                      <li><a class="modal-navbar__link" href="/Interfaz de usuario/index.html">Catalogo</a></li>
+                      <li><a class="modal-navbar__link" href="/prototipo.html">Laptops</a></li>
+                      <li><a class="modal-navbar__link" href="#">Computadoras de Escritorio</a></li>
+                      <li><a class="modal-navbar__link" href="#">Celulares</a></li>
+                      <li><a class="modal-navbar__link" href="mailto:mathiaslin12@gmail.com">Contacto</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                 <!--final modal navbar-->
+                 <div class="header__cart-avatar">
+                  <div class="header__cart">
+                    <div class="header__cart-notification">0</div>
+                    <img src="images/carrito.svg" alt="carrit" >
+                  </div>
+                  <img class="header__avatar" src="images/descarga.png" alt="" width="50px" height="50px">
+                 </div>
+            </header>
+            <section class="content">
+              <article class="gallery">
+                <div class="gallery__image-container">
+                  <img class="gallery__previus" src="images/previos.svg" alt="previus">
+                  <img class="gallery__next" src="images/previosde.png" alt="next">
+                </div>
+                <div class="gallery__htummails">
+                  <img id="1" class="gallery__htummail" src="images/lap-1.jpeg" alt="htummail">
+                  <img id="2" class="gallery__htummail" src="images/lap-2.jpeg" alt="htummail">
+                  <img id="3" class="gallery__htummail" src="images/lap-3.jpeg" alt="htummail">
+                  <img id="4" class="gallery__htummail" src="images/lap-4.jpeg" alt="htummail">
+                </div>
+              </article>
+              <article class="details">
+                <h2 class="details__company">Memory Kings</h2>
+                <h2 class="details__title"> ThinkBook 16 Gen 4 (16" Intel) </h2>
+                <p class="details__description"> La laptop ThinkBook 16 de 4ta generación te ofrece
+                  el máximo,Más potencia gracias a su procesador Intel® Core™ i7-1255U de 12ᵃ Generación.
+                  Ahora también con más espacio:la pantalla de 16" es la más grande de la línea ThinkBook
+                  ,con su resolución de hasta 2,5k y opciones gráficas avanzadas.
+                </p>
+                <div class="details__prices">
+                  <p class="details__now">S/:4199.00 <span class="details__discount">50%</span> </p>
+                  <p class="details__before">S/:8500.00</p>
+                </div>
+                <div class="details__product-cuantity">
+                  <div class="input">
+                    <img class="input__minus" src="images/menos.svg" alt="minus">
+                    <input class="input__number" type="number" value="0">
+                    <img class="input__plus" src="images/plus.svg" alt="plus">
+                  </div>
+                  <button class="details__button"><img class="details__carrito-log" src="images/carrito.svg" alt="button">
+                    <span>Add to cart</span>
+                  </button>
+                </div>
+              </article>
+            </section>
+            <!--inicio cart modal-->
+            <div class="cart-modal">
+              <p class="cart-modal__title">Cart</p>
+              <div class="cart-modal__checkout-container">
+                <div class="cart-modal__details-container">  
+                  <img class="cart-modal__image" src="images/lap-1.jpeg" alt="">
+                  <div>
+                    <p class="cart-modal__product">Autum limited edittion</p>
+                    <p class="cart-modal__price">$1255 x3 <span>$3750.00</span></p>
+                  </div>
+                  <img class="cart-modal__delete" src="images/x-symbol-svgrepo-com copy.svg" alt="delete">
+                    </div>
+                    <button class="cart-modal__Checkout">Checkout</button>
+                    </div>
+                </div>
+           
+            <!--final cart modal-->
+
+            
+          </main>
+         <footer class="atribution">
+          coder by <a href="" target="_blank">Linecode</a>
+         </footer>
+<!--initial gallery modal-->
+<div class="modal-gallery__background">
+  <article class="modal-gallery">
+    <div class="modal-gallery__close-container">
+      
+      <img class="modal-gallery__close" src="images/x-symbol-svgrepo-com copy.svg" alt="close">
+    
+    </div>
+    <div class="modal-gallery__image-container">
+      <img class="modal-gallery__previuos" src="images/previos.svg" alt="previous">
+      <img class="modal-gallery__next" src="images/previosde.png" alt="next">
+    </div>
+    <div class="modal-gallery__htummails">
+      <img id="m1" class="modal-gallery__htummail" src="images/lap-1.jpeg" alt="htummails">
+      <img id="m2" class="modal-gallery__htummail" src="images/lap-2.jpeg" alt="htummails">
+      <img id="m3" class="modal-gallery__htummail" src="images/lap-3.jpeg" alt="htummails">
+      <img id="m4" class="modal-gallery__htummail" src="images/lap-4.jpeg" alt="htummails">
+    </div>
+    </article>
+</div>
+ <!--initial gallery modal-->
+
+         <script src="./mian.js"></script>
+    </body>
+</html>

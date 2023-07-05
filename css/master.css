@@ -1,0 +1,304 @@
+.main-container{
+    width: 375px;
+    min-width: 1115px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos de encabezado */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .header img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .navebar__items {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navebar__link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Estilos del menú desplegable */
+  .modal-navebar__background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .modal-navebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .modal-navebar__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .modal-navebar__link {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .modal-navebar_close-icon {
+    width: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos del avatar y carrito */
+  .header__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header__cart {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .header__cart-notification {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 12px;
+  }
+  
+  /* Estilos de contenido principal */
+  .contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .gallery {
+    margin-right: 20px;
+  }
+  
+  .gallery_image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .gallery__previuos,
+  .gallery__next {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .gallery__htummails {
+    display: flex;
+  }
+  
+  .gallery__htummails img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .details__description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .details__prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .details__now {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .details__discount {
+    color: red;
+  }
+  
+  .details_before {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .details__product-cuantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .input__number {
+    width: 30px;
+    text-align: center;
+    border: none;
+  }
+  
+  .input__minus,
+  .input__plus {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .details__button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos del carrito modal */
+  .cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .cart-modal__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cart-modal__checkout-container {
+    margin-bottom: 20px;
+  }
+  
+  .cart-modal__details-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-modal__details-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .cart-modal__delete {
+    width: 10px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  /* Estilos del modal de galería */
+  .modal-galery__background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .modal-gallery {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .modal-galeri__close {
+    width: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-gallery_image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .modal-gallery__previuos,
+  .modal-gallery__next {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .modal-gallery__htummails {
+    display: flex;
+  }
+  
+  .modal-gallery__htummails img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos del pie de página */
+  .atribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .atribution a {
+    color: firebrick;
+  }
+  
